@@ -51,6 +51,7 @@ brew install mas
 ```
 
 #### Sign in
+This may tell you if you already signed into the app store
 
 ```shell
 mas signin email@email.com
@@ -58,33 +59,25 @@ mas signin email@email.com
 
 ### Brewfile
 
+See the Brewfile here
+
+## Java
+
 ```shell
-touch Brewfile
+brew tap caskroom/versions
+brew cask install java8
+```
+
+## SDK Man
+see http://sdkman.io/install.html
+
+```shell
+curl -s "https://get.sdkman.io" | bash
 ```
 
 ```shell
-tap 'caskroom/cask'
-
-brew 'git'
-brew 'npm'
-
-cask 'brackets'
-cask 'flux'
-cask 'firefox'
-cask 'gimp'
-cask 'google-chrome'
-cask 'opera'
-cask 'spectacle'
-cask 'sequel-pro'
-cask 'utorrent'
-cask 'vlc'
-
-mas 'Numbers', id: 409203825
-mas 'Pages', id: 409201541
-mas 'Slack', id: 803453959
-mas 'Sip', id: 507257563 
-mas 'Simplenote', id: 692867256 
-mas 'Todoist', id: 585829637
+sdk install grails
+sdk install gradle
 ```
 
 ## GitHub
