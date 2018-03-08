@@ -59,7 +59,10 @@ mas signin email@email.com
 
 ### Brewfile
 
-See the Brewfile here
+move the Brewfile here to home dir
+```
+brew bundle install
+```
 
 ## Java
 
@@ -108,20 +111,32 @@ sdk install gradle
 
 ## SSH
 
-### Config - `~./ssh/config`
-
-```shell
-Host example
-    HostName example.com
-    User example-user
-    IdentityFile key.pem
-```
-
 ### Generate SSH key
 
 ```shell
 ssh-keygen -t rsa -b 4096 -C "email@email.com"
 ```
+
+### Config - `~./ssh/config`
+
+For Sierra and High Sierra
+
+```shell
+Host *
+ AddKeysToAgent yes
+ UseKeychain yes
+ IdentityFile ~/.ssh/id_rsa
+```
+
+### Copy to Github
+
+```shell
+pbcopy < ~/.ssh/id_rsa.pub
+```
+The add the key under your user settings on github https://github.com/settings/keys
+
+see https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
+and https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 
 ## Bash
 

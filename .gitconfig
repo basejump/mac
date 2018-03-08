@@ -1,0 +1,33 @@
+[user]
+	email = addy@mail.com
+	name = Joshua B
+[core]
+	excludesfile = /Users/basejump/.gitignore_global
+	editor = subl -w
+[github]
+    user = basejump
+[alias]
+    a = add
+    ca = commit -a
+    cam = commit -am
+    s = status
+    pom = push origin master
+    pog = push origin gh-pages
+    puom = pull origin master
+    puog = pull origin gh-pages
+    co = checkout
+    cob = checkout -b
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/basejump/.stCommitMsg
+[credential]
+	helper = osxkeychain
+[color]
+	ui = true
+[push]
+	default = current
