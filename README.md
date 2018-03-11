@@ -158,12 +158,12 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 ```
 
-## Node.js
+## Node.js With NVM
 
-### Download Node
+### Install Nvm
 
 ```shell
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
 ```
 
 ```shell
