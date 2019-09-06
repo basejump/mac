@@ -50,6 +50,11 @@ defaults write com.apple.finder ShowStatusBar -bool true
 brew install mas
 ```
 
+## Multiple Users
+
+if setting up mac for many users that will use brew see here
+https://gist.github.com/jaibeee/9a4ea6aa9d428bc77925
+
 #### Sign in
 This may tell you if you already signed into the app store
 
